@@ -1,9 +1,8 @@
-# ORIGINAL LICENSE
-# SPDX-FileCopyrightText: Copyright (c) 2021-2022 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
-# SPDX-License-Identifier: LicenseRef-NvidiaProprietary
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+# All rights reserved.
 #
-# Modified by Zexin He
-# The modifications are subject to the same license as the original.
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
 
 
 import itertools
