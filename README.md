@@ -34,7 +34,7 @@ cd vfusion3d
 ```
 
 ### Environment
-We provide a simple installation script that, by default, sets up a conda environment with Python 3.8.19, PyTorch 2.3, and CUDA 12.1. Similar package versions might still work
+We provide a simple installation script that, by default, sets up a conda environment with Python 3.8.19, PyTorch 2.3, and CUDA 12.1. Similar package versions should also work.
 
 ```
 source install.sh
