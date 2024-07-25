@@ -4,7 +4,7 @@
 # This source code is licensed under the license found in the
 # LICENSE file in the root directory of this source tree.
 
-# This Script Assumes Python 3.8.19, CUDA 12.1. Similar or lower package versions might still work but they are not tested.
+# This Script Assumes Python 3.8.19, CUDA 12.1. Similar versions might still work but they are not tested.
 
 conda deactivate
 
