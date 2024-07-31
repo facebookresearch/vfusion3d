@@ -48,13 +48,12 @@ source install.sh
 
 
 ### Prepare Images
-- We put some sample inputs under `assets/40_prompt_images`, which is the 40 MVDream prompt images used in the paper. Results of them are also provided under `results/40_prompt_images_provided`. 
+- We put some sample inputs under `assets/40_prompt_images`, which is the 40 MVDream prompt generated images used in the paper. Results of them are also provided under `results/40_prompt_images_provided`. 
 
 ### Inference
 - Run the inference script to get 3D assets.
 - You may specify which form of output to generate by setting the flags `--export_video` and `--export_mesh`.
 - Change `--source_path` and `--dump_path` if you want to run it on other image folders.
-
 
     ```
     # Example usages
@@ -63,17 +62,17 @@ source install.sh
     
     # Export mesh
     python -m lrm.inferrer --export_mesh --resume ./checkpoints/vfusion3dckpt
-    
     ```
+    
 ### Hints
 
-1. **Running out of GPU memory?**
+1. *Running out of GPU memory?*
    - Try reducing the `--render_size` parameter to 256 or even 128. Note that this will degrade performance.
 
-2. **Unsatisfactory results?**
+2. *Unsatisfactory results?*
    - This inference code works best with front view (or nearly front view) input images. Side views are generally supported, but may result in poorer outcomes. If this is the issue, see below.
 
-3. **Customizing for different viewing angle inputs:**
+3. *Customizing for different viewing angle inputs:*
    - Although the model supports input images from any viewing angle, you will need to modify `lrm/inferrer.py`, which can be a bit complex so it is usually not recommended. Specifically, adjust `canonical_camera_extrinsics` within `_default_source_camera`. To find the `canonical_camera_extrinsics` for the desired input image, follow these steps:
 
    1. Use a front view image as the input to generate a video result.
