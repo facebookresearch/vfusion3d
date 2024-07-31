@@ -53,7 +53,8 @@ source install.sh
 ### Inference
 - Run the inference script to get 3D assets.
 - You may specify which form of output to generate by setting the flags `--export_video` and `--export_mesh`.
-- Change `--source_path` and `--dump_path` if you want to run it on other image folders. 
+- Change `--source_path` and `--dump_path` if you want to run it on other image folders.
+
 
     ```
     # Example usages
@@ -62,9 +63,25 @@ source install.sh
     
     # Export mesh
     python -m lrm.inferrer --export_mesh --resume ./checkpoints/vfusion3dckpt
+    
     ```
+### Hints
 
+1. **Running out of GPU memory?**
+   - Try reducing the `--render_size` parameter to 256 or even 128. Note that this will degrade performance.
 
+2. **Unsatisfactory results?**
+   - This inference code works best with front view (or nearly front view) input images. Side views are generally supported, but may result in poorer outcomes. If this is the issue, see below.
+
+3. **Customizing for different viewing angle inputs:**
+   - Although the model supports input images from any viewing angle, you will need to modify `lrm/inferrer.py`, which can be a bit complex so it is usually not recommended. Specifically, adjust `canonical_camera_extrinsics` within `_default_source_camera`. To find the `canonical_camera_extrinsics` for the desired input image, follow these steps:
+
+   1. Use a front view image as the input to generate a video result.
+   2. Check `render_camera_extrinsics` inside `_default_render_cameras` along with the rendered video results.
+   3. Identify the view that closely matches the desired input image (in viewing angles).
+   4. Replace values of `canonical_camera_extrinsics` with the corresponding `render_camera_extrinsics`.
+   5. Run the inference code again with your desired input view.
+  
 ## Acknowledgement
 
 - This inference code of VFusion3D heavily borrows from [OpenLRM](https://github.com/3DTopia/OpenLRM).  
