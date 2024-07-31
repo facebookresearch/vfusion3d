@@ -19,7 +19,7 @@ conda activate $ENV_NAME
 conda install pytorch=2.3.0 torchvision==0.18.0 pytorch-cuda=$CUDA_VERSION -c pytorch -c nvidia
 pip install transformers
 pip install imageio[ffmpeg]
-pip install PyMCubes
-pip install trimesh
+pip install PyMCubes==0.1.4
+pip install trimesh==4.3.2
 pip install rembg[gpu,cli]
 pip install kiui
