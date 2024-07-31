@@ -117,7 +117,7 @@ class LRMInferrer:
     def infer_single(self, image: torch.Tensor, render_size: int, mesh_size: int, export_video: bool, export_mesh: bool):
         # image: [1, C_img, H_img, W_img]
         mesh_thres = 1.0
-        chunk_size = 2
+        chunk_size = 1 # You can increase this number if GPU memory allows.
         batch_size = 1
 
         source_camera = self._default_source_camera(batch_size).to(self.device)
