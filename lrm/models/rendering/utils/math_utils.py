@@ -106,14 +106,14 @@ def get_ray_limits_box(rays_o: torch.Tensor, rays_d: torch.Tensor, box_side_leng
 def linspace(start: torch.Tensor, stop: torch.Tensor, num: int):
     """
     Creates a tensor of shape [num, *start.shape] whose values are evenly spaced from start to end, inclusive.
-    Replicates but the multi-dimensional bahaviour of numpy.linspace in PyTorch.
+    Replicates but the multi-dimensional behaviour of numpy.linspace in PyTorch.
     """
     # create a tensor of 'num' steps from 0 to 1
     steps = torch.arange(num, dtype=torch.float32, device=start.device) / (num - 1)
 
-    # reshape the 'steps' tensor to [-1, *([1]*start.ndim)] to allow for broadcastings
+    # reshape the 'steps' tensor to [-1, *([1]*start.ndim)] to allow for broadcasting
     # - using 'steps.reshape([-1, *([1]*start.ndim)])' would be nice here but torchscript
-    #   "cannot statically infer the expected size of a list in this contex", hence the code below
+    #   "cannot statically infer the expected size of a list in this context", hence the code below
     for i in range(start.ndim):
         steps = steps.unsqueeze(-1)
 
