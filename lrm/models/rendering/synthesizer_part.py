@@ -189,6 +189,4 @@ class TriplaneSynthesizer(nn.Module):
             for k in outs[0].keys()
         }
         
-        sig = point_features['sigma']
-        print(sig.mean(), sig.max(), sig.min())
         return point_features
