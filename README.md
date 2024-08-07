@@ -1,6 +1,6 @@
 # [ECCV 2024] VFusion3D: Learning Scalable 3D Generative Models from Video Diffusion Models
 
-[Porject page](https://junlinhan.github.io/projects/vfusion3d.html), [Paper link](https://arxiv.org/abs/2403.12034)
+[Project page](https://junlinhan.github.io/projects/vfusion3d.html), [Paper link](https://arxiv.org/abs/2403.12034)
 
 VFusion3D is a large, feed-forward 3D generative model trained with a small amount of 3D data and a large volume of synthetic multi-view data. It is the first work exploring scalable 3D generative/reconstruction models as a step towards a 3D foundation.
 
@@ -102,4 +102,4 @@ If you find this work useful, please cite us:
 ## License
 
 - The majority of VFusion3D is licensed under CC-BY-NC, however portions of the project are available under separate license terms: OpenLRM as a whole is licensed under the Apache License, Version 2.0, while certain components are covered by NVIDIA's proprietary license.
-- The model weights of VFusion3D is also licensed under CC-BY-NC.
+- The model weights of VFusion3D are also licensed under CC-BY-NC.
