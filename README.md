@@ -1,6 +1,6 @@
 # [ECCV 2024] VFusion3D: Learning Scalable 3D Generative Models from Video Diffusion Models
 
-[Project page](https://junlinhan.github.io/projects/vfusion3d.html), [Paper link](https://arxiv.org/abs/2403.12034)
+[Project page](https://junlinhan.github.io/projects/vfusion3d.html), [Paper link](https://arxiv.org/abs/2403.12034), [HF Demo](https://huggingface.co/spaces/facebook/VFusion3D)
 
 VFusion3D is a large, feed-forward 3D generative model trained with a small amount of 3D data and a large volume of synthetic multi-view data. It is the first work exploring scalable 3D generative/reconstruction models as a step towards a 3D foundation.
 
@@ -12,7 +12,9 @@ European Conference on Computer Vision (ECCV), 2024
 
 ## News
 
+- [08.08.2024] [HF Demo](https://huggingface.co/spaces/facebook/VFusion3D) is available, big thanks to [Jade Choghari](https://github.com/jadechoghari)'s help for making it possible. 
 - [25.07.2024] Release weights and inference code for VFusion3D.
+  
 
 ## Results and Comparisons
 
