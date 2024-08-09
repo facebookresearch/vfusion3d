@@ -65,7 +65,13 @@ source install.sh
     # Export mesh
     python -m lrm.inferrer --export_mesh --resume ./checkpoints/vfusion3dckpt
     ```
-    
+
+### Local Gradio App
+
+```
+python gradio_app.py 
+```
+
 ### Hints
 
 1. *Running out of GPU memory?*
