@@ -46,7 +46,7 @@ source install.sh
 
 ### Pretrained Models
 
-- Model weights are available here [Hugging Face](https://huggingface.co/facebook/vfusion3d/blob/main/model.safetensors). Please download it and put it inside ./checkpoints/
+- Model weights are available on [Google Drive](https://drive.google.com/file/d/1b-KKSh9VquJdzmXzZBE4nKbXnbeua42X/view?usp=sharing) and [Hugging Face](https://huggingface.co/facebook/vfusion3d/blob/main/model.safetensors). We recommend using Google Drive. Please download it and put it inside ./checkpoints/
 
 
 ### Prepare Images
