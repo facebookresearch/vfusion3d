@@ -74,7 +74,7 @@ python gradio_app.py
 
 ### Hints
 
-1. *Running out of GPU memory?*
+1. *Running out of GPU memory when generating videos?*
    - Try reducing the `--render_size` parameter to 256 or even 128. Note that this will degrade performance.
 
 2. *Unsatisfactory results?*
