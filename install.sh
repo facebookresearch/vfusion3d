@@ -23,3 +23,5 @@ pip install PyMCubes==0.1.4
 pip install trimesh==4.3.2
 pip install rembg[gpu,cli]
 pip install kiui
+pip install gradio==4.31.4
+pip install gradio-litmodel3d==0.0.1
