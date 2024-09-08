@@ -12,7 +12,7 @@ European Conference on Computer Vision (ECCV), 2024
 
 ## News
 
-- [08.08.2024] [HF Demo](https://huggingface.co/spaces/facebook/VFusion3D) is available, big thanks to [Jade Choghari](https://github.com/jadechoghari)'s help for making it possible. 
+- [08.08.2024] [HF Demo](https://huggingface.co/spaces/facebook/VFusion3D) & [HF Model](https://huggingface.co/facebook/vfusion3d) are available, big thanks to [Jade Choghari](https://github.com/jadechoghari)'s help for making it possible. 
 - [25.07.2024] Release weights and inference code for VFusion3D.
   
 
@@ -46,8 +46,7 @@ source install.sh
 
 ### Pretrained Models
 
-- Model weights are available on [Google Drive](https://drive.google.com/file/d/1b-KKSh9VquJdzmXzZBE4nKbXnbeua42X/view?usp=sharing) and [Hugging Face](https://huggingface.co/facebook/vfusion3d/blob/main/model.safetensors). We recommend using Google Drive. Please download it and put it inside ./checkpoints/
-
+- Model weights are available on [Google Drive](https://drive.google.com/file/d/1b-KKSh9VquJdzmXzZBE4nKbXnbeua42X/view?usp=sharing) and [Hugging Face](https://huggingface.co/facebook/vfusion3d/blob/main/model.safetensors). Please download it and put it inside ./checkpoints/ if you're running it from GitHub. Alternatively, you can easily follow the instructions on the Hugging Face model card here 🤗: https://huggingface.co/facebook/vfusion3d.
 
 ### Prepare Images
 - We put some sample inputs under `assets/40_prompt_images`, which is the 40 MVDream prompt generated images used in the paper. Results of them are also provided under `results/40_prompt_images_provided`. 
